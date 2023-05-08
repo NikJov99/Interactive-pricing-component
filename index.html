@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="introduction">
+        <h2>Simple, traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </header>
+      <main>
+        <section class="top-section">
+          <h4 id="pageviews-count-mobile">100K Pageviews</h4>
+          <div class="price-wrapper-desktop">
+            <h4 id="pageviews-count-desktop">100K Pageviews</h4>
+            <div class="price-display-desktop">
+              <span id="price-desktop">$16.00</span>
+              <span> / month</span>
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <input type="range" id="slider" />
+          </div>
+          <div class="price-wrapper">
+            <span id="price">$16.00</span>
+            <p>/ month</p>
+          </div>
+          <div class="billing">
+            <p>Monthly Billing</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p>Yearly Billing</p>
+            <div class="discount-wrapper">
+              <p id="discount">
+                -25% <span id="desktop-discount">discount</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bottom-section">
+          <ul>
+            <li>
+              <img src="images/icon-check.svg" alt="check" />Unlimited websites
+            </li>
+            <li>
+              <img src="images/icon-check.svg" alt="check" />100% data ownership
+            </li>
+            <li>
+              <img src="images/icon-check.svg" alt="check" />Email reports
+            </li>
+          </ul>
+          <button id="trial-start-button">Start my trial</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
